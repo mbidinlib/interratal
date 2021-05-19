@@ -11,7 +11,7 @@ This program would be helpful in grading such inter-ratal assessments
 ## installation(v1.0)
 
 ```stata
-net install shortlist, all replace ///
+net install interratal, all replace ///
 	from("https://raw.githubusercontent.com/mbidinlib/interratal/master/ado")
 ```
 
