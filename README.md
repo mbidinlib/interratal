@@ -1,6 +1,6 @@
 # interratal
 
-Stata program that converts long dataset to wide
+Stata program that grades inter-ratal scoring/enteries
 
 ## Overview
 
@@ -24,10 +24,13 @@ interratal using "data", 							///
 		masterval(key value for master response)			///
 		enumid(enumerator id) 						///
 		enumname(enumerator name) 					///
-		outfile(output file name and path) 				///
-		xlsform(xls form for the data)					
+		outfile(output file name and path) 				///	////If this option is specifies, the last one is not needed
+		xlsform(xls form for the data) -				/// 	//This option is used if the xlsform() is not specified
+		comparevars(variables to compare)
 
 
 ```
+## Note 
+
 
 
