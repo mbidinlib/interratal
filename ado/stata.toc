@@ -1,0 +1,3 @@
+v 1.0.1
+d Grade inter-ratal
+p Program that grades inter-ratal enteries

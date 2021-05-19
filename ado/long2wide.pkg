@@ -1,0 +1,12 @@
+1.0.1
+d 'Interrata': Stata program that grades interratal assessments
+d
+d KW: interratal
+d KW: grade
+d KW: multiple enteries
+d
+d Distribution-Date: 20210519
+d
+d Authors: Mathew Bidinlib, Innovations for Poverty Action
+d Support: mbidinlib@poverty-action.org
+f interratal.ado
