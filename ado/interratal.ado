@@ -93,7 +93,7 @@ program define interratal
 		
 		putexcel set "`outfile'", sheet(summary) replace
 		putexcel B1:C1 = "Summary", bold merge hcenter
-		putexcel save 
+		cap putexcel save 
 		
 		
 		noi di ""
