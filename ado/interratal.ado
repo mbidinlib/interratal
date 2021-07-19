@@ -40,8 +40,11 @@ program define interratal
 		}
 	
 			if ("`xlsform'" =="" & "`comparevars'" =="") {
-			noi di as err "At lease one of these options [xlsform, comparevars] should be specified "
-			exit
+			noi di ""
+			noi di ""
+			noi di "You did not specify variables to compare. The program will proceed and compare all variables in memory "
+			noi di "{hline}"
+			noi di ""
 		}
 
 	
@@ -115,7 +118,8 @@ program define interratal
 			}
 		}
 
-		keep `vars' `c_key' `enum_name' `enum_id'
+		if ("`xlsform'" =="" & "`comparevars'" =="")  noi di "Keeping all variables"
+		else keep `vars' `c_key' `enum_name' `enum_id'
 		*if regexm("`:type `c_key''", "str") loc c_key_val = "`c_key_val'"
 		*else loc c_key_val = `c_key_val'
 
@@ -179,7 +183,8 @@ program define interratal
 			}
 		}
 
-		keep `vars' `c_key' `enum_name' `enum_id'
+		if ("`xlsform'" =="" & "`comparevars'" =="")  noi di "Keeping all variables"
+		else keep `vars' `c_key' `enum_name' `enum_id'
 		loc count = 0
 		gen master_val = `c_key' == "`c_key_val'"
 		foreach k of varl _all {
